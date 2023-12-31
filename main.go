@@ -2,7 +2,9 @@ package main
 
 func main() {
 
-	runStruct()
+	runMaps()
+
+	// runStruct()
 
 	// peter := person{"Peter", "Anderson", contactInfo{"test_one@test.com", 12345}}
 
