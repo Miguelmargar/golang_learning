@@ -37,3 +37,17 @@ func TestSaveToDeckAndNewDeckFromFile(t *testing.T) {
 
 	os.Remove("_decktesting")
 }
+
+func TestDeal(t *testing.T) {
+	d := newDeck()
+
+	d1, d2 := deal(d, 4)
+
+	if len(d1) != 4 {
+		t.Errorf("Expected deck to be of lenght 4 and got lenght: %v", len(d1))
+	}
+
+	if len(d2) != 32 {
+		t.Errorf("Expected deck to be of lenght 32 and got lenght: %v", len(d2))
+	}
+}
