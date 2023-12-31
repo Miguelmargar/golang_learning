@@ -39,6 +39,7 @@ func TestSaveToDeckAndNewDeckFromFile(t *testing.T) {
 }
 
 func TestDeal(t *testing.T) {
+
 	d := newDeck()
 
 	d1, d2 := deal(d, 4)
