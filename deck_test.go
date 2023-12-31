@@ -1,10 +1,12 @@
 package main
 
 import (
+	"os"
 	"testing"
 )
 
 func TestNewDeck(t *testing.T) {
+
 	d := newDeck()
 
 	if len(d) != 36 {
@@ -18,4 +20,20 @@ func TestNewDeck(t *testing.T) {
 	if d[len(d)-1] != "Nine of Clubs" {
 		t.Errorf("Expected card: Nine of Clubs but got: %s", d[len(d)-1])
 	}
+}
+
+func TestSaveToDeckAndNewDeckFromFile(t *testing.T) {
+
+	os.Remove("_decktesting")
+
+	deck := newDeck()
+	deck.saveToFile("_decktesting")
+
+	loadedDeck := newDeckFromFile("_decktesting")
+
+	if len(loadedDeck) != 36 {
+		t.Errorf("Expected 36 cards in deck, got %v", len(loadedDeck))
+	}
+
+	os.Remove("_decktesting")
 }
