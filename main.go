@@ -2,7 +2,11 @@ package main
 
 func main() {
 
-	runMaps()
+	runHttpRequest()
+
+	// runInterfaces()
+
+	// runMaps()
 
 	// runStruct()
 
