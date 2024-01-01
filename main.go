@@ -2,7 +2,7 @@ package main
 
 func main() {
 
-	runHttpRequestWithWrite()
+	runCustomLogger()
 
 	// runInterfaces()
 
