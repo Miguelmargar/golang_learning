@@ -2,7 +2,9 @@ package main
 
 func main() {
 
-	runCustomLogger()
+	runShapes()
+
+	// runCustomLogger()
 
 	// runInterfaces()
 
