@@ -2,7 +2,9 @@ package main
 
 func main() {
 
-	runPrintFile()
+	runChannels()
+
+	// runPrintFile()
 
 	// runShapes()
 
