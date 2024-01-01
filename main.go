@@ -2,7 +2,9 @@ package main
 
 func main() {
 
-	runShapes()
+	runPrintFile()
+
+	// runShapes()
 
 	// runCustomLogger()
 
